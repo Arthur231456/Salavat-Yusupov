@@ -20,7 +20,7 @@ class Drawer(QW.QMainWindow):
         if self.paint:
             qp = QtGui.QPainter()
             qp.begin(self)
-            qp.setBrush(QColor(255, 255, 0))
+            qp.setBrush(QColor(c(range(255)), c(range(255)), c(range(255))))
             x, y = c(range(0, 630)), c(range(0, 500))
             h = c(range(40, 300))
             while not (x + h < 700 and y + h < 570):
